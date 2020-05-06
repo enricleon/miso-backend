@@ -15,7 +15,7 @@ services:
     backend:
       depends_on:
         - mongo
-      image: cloud.enricleon.com/miso-backend:latest
+      image: cloud.enricleon.com/enricleon/miso-backend:latest
       restart: always
       environment:
         - MongoDB__User=root
