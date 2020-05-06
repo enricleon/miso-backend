@@ -19,5 +19,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         username: ${{ secrets.DOCKER_USERNAME }}
         path: Miso.Api
-        repository: cloud.enricleon.com/miso-backend
+        repository: cloud.enricleon.com/enricleon/miso-backend
         tags: latest
