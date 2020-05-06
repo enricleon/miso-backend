@@ -15,7 +15,7 @@ services:
     backend:
       depends_on:
         - mongo
-      image: alejandroandreu/miso-backend:latest
+      image: cloud.enricleon.com/miso-backend:latest
       restart: always
       environment:
         - MongoDB__User=root
@@ -27,12 +27,6 @@ services:
       networks:
         - private
         - public
-      labels:
-       - "traefik.enable=true"
-       - "traefik.docker.network=public"
-       - "traefik.http.routers.miso.rule=Host(`api.miso.lapsus.live`)"
-       - "traefik.http.routers.miso.entrypoints=https"
-       - "traefik.http.routers.miso.tls.certresolver=cloudflare"
 
 networks:
   public:
